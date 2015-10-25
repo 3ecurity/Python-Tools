@@ -10,8 +10,8 @@ def extract_zip(zFile,password):
         pass
 
 def main():
-    parser = optparse.OptionParser("usage %preg "+\
-            "-f -zipfile -d -dictionary")
+    parser = optparse.OptionParser("Usage: python Zip_Password_Cracker.py"+\
+            " -f -zipfile -d -dictionary")
     parser.add_option("-f",dest="zname",type="string",\
             help="specify zip file")
     parser.add_option("-d",dest="dname",type="string",\
@@ -34,5 +34,6 @@ def main():
         #print "[+]Try Password: "+password
 if __name__ == "__main__":
     main()
+
 
 
