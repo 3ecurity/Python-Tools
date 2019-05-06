@@ -1,2 +1,2 @@
-# Hacking With Python
+# Python小脚本
 
