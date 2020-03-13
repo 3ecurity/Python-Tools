@@ -6,7 +6,7 @@ headers = {'X-Requested-With': 'XMLHttpRequest',
 def fofadown(page,search):
     #search = '''title="404 NOT FOUND" && body="Hypertext"'''
     for i in range(int(page)):
-        url = "https://fofa.so/result?page="+str(i+1)+"&qbase64="+str(base64.b64encode(search.encode("utf-8")))[2:-1]
+        url = "https://fofa.so/result?page="+str(i+1)+"&qbase64="+quote(str(base64.b64encode(search.encode("utf-8")))[2:-1]) #支持搜索中文以及英文字符
         print(url)
         time.sleep(3)
         res = requests.get(url,headers=headers)
