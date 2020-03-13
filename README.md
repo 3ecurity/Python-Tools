@@ -14,7 +14,7 @@ Zip密码破解
 
 ## fofa.py
 
-fofa结果写入txt
+fofa结果写入txt<br/>
 python3 fofa.py 页数 写入的文件名 您的cookie
 
 ## portscan.py
